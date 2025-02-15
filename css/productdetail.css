@@ -1,0 +1,221 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Header Styles */
+header {
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+header .logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header .nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header .nav-links li {
+    margin-right: 20px;
+}
+
+header .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header .nav-links li a:hover {
+    color: #007BFF;
+}
+
+/* Special Promotions Section */
+.special-promotions {
+    padding: 20px;
+    text-align: center;
+}
+
+/* 50% OFF Special Promotion Box */
+.promo-discount {
+    background-color: #FF69B4; /* Pink background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.promo-discount p {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Promo Banner Styles */
+.promo-banner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+/* Individual Promo Item */
+.promo-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.promo-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.promo-item h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.promo-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+.promo-item button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.promo-item button:hover {
+    background-color: #0056b3;
+}
+
+/* Headphones Section */
+.headphones-section {
+    padding: 20px;
+    text-align: left;
+}
+
+.headphones-section h2 {
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+/* Product Box */
+.product {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image */
+.product img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.product:hover img {
+    transform: scale(1.05);
+}
+
+/* Product Button */
+.product button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #0056b3;
+}
+
+/* View Details Button */
+.product .view-details {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.product .view-details:hover {
+    background-color: #218838;
+}
+
+

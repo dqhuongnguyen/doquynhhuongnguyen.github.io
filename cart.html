@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./css/cart.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="cart-container">
+
+        <div class="cart-items">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="product">
+                                <img src="./assets/airpod_max.jpg" alt="Product Image">
+                                <div>
+                                    <strong>AirPods Max</strong>
+                                </div>
+                            </div>
+                        </td>
+                        <td>$559.00</td>
+                        <td>
+                            <div class="quantity">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                        </td>
+                        <td>$559.00</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="product">
+                                <img src="./assets/macbook.webp" alt="Product Image">
+                                <div>
+                                    <strong>Macbook Pro 13 inch</strong>
+                                </div>
+                            </div>
+                        </td>
+                        <td>$1499</td>
+                        <td>
+                            <div class="quantity">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                        </td>
+                        <td>$1499</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="product">
+                                <img src="./assets/book.webp" alt="Product Image">
+                                <div>
+                                    <strong>Think and Grow Rich</strong>
+                                </div>
+                            </div>
+                        </td>
+                        <td>$29.00</td>
+                        <td>
+                            <div class="quantity">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                        </td>
+                        <td>$29.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Total -->
+        <div class="cart-total">
+            <p><strong>Total: $2,087.00</strong></p>
+        </div>
+
+        <!-- Buttons -->
+        <div class="cart-buttons">
+            <button class="checkout">Checkout</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
