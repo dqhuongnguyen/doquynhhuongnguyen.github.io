@@ -3,92 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopcart - Headphones & Accessories</title>
-    <link rel="stylesheet" href="./css/productdetail.css"> <!-- Link to the updated CSS -->
+    <title>Shopcart - AirPods Max</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/productdetail.css">
 </head>
 <body>
-    <section class="special-promotions">
-        <h2>Special Promotions</h2> <!-- Topic added here -->
-    </section>
-
-    <!-- 50% OFF on Selected Items Promotion Box -->
-    <div class="promo-discount">
-        <p>50% OFF on Selected Items</p>
-    </div>
-
-    <section class="promo-banner">
-        <div class="promo-item">
-            <img src="./assets/bluetooth.jpg" alt="Bluetooth Speakers">
-            <h3>Bluetooth Speakers</h3>
-            <p>Get amazing discounts on selected Bluetooth speakers!</p>
-            <button>Shop Now</button>
-        </div>
-        <div class="promo-item">
-            <img src="./assets/watch.jpg" alt="Watch">
-            <h3>Watch</h3>
-            <p>Grab your stylish watch today!</p>
-            <button>Shop Now</button>
-        </div>
-        <div class="promo-item">
-            <img src="./assets/wireless.jpg" alt="Wireless Earbuds">
-            <h3>Wireless Earbuds</h3>
-            <p>Hurry, limited stock available for wireless earbuds!</p>
-            <button>Shop Now</button>
-        </div>
-    </section>
-
-    <div class="main-content">
-        <!-- Headphones Section -->
-        <div class="headphones-section">
-            <h2>Headphones</h2>
-        </div>
-
-        <section class="product-grid">
-            <div class="product">
-                <img src="./assets/headphones1.jpg" alt="Beats Headphones">
-                <h2>Beats</h2>
-                <p>High-quality sound with a sleek design.</p>
-                <p><strong>$299.00</strong></p>
-                <p class="availability">In Stock</p>
-                <p class="special-financing">Special financing available.</p>
-                <button>Add to Cart</button>
-                <button class="view-details">View Details</button>
+    <header>
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="./assets/shopping-cart-icon.webp" width="40px">
+                Bmazon
             </div>
+            <div class="nav-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <button>
+                        <img src="./assets/magnifying-glass.webp" width="20px">
+                    </button>
+                </div>
+                <div class="account-cart">
+                    <a href="login.html">Account</a>
+                    <a href="cart.html">Cart</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="product-container">
+            <div class="product-image">
+                <img src="./assets/airpod_max.jpg" alt="AirPods Max">
+            </div>
+            <div class="product-details">
+                <h1>AirPods Max</h1>
+                <p>A perfect balance of exhilarating high-fidelity audio and the effortless magic of AirPods.</p>
+                <p class="price">$549.00 or 99.99/month</p>
+                <p class="availability">Only <strong>12 items</strong> left! Don't miss it.</p>
+                <div class="color-options">
+                    <span style="background-color: black;"></span>
+                    <span style="background-color: silver;"></span>
+                    <span style="background-color: lightcoral;"></span>
+                    <span style="background-color: lightblue;"></span>
+                    <span style="background-color: pink;"></span>
+                </div>
+                <a href="buynow.html" class="buy-now">Buy Now</a>
+                <a href="cart.html" class="add-to-cart">Add To Cart</a>
+                <div class="delivery-info">
+                    <p>Free Delivery</p>
+                    <p>Return Delivery - <strong>30 days return policy.</strong></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+        <!-- Footer -->
+        <div class="footer-line"></div>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <h2>Bmazon</h2>
+                    </div>
+                    <p>We are committed to providing the best products and services to our customers.</p>
+                </div>
     
-            <div class="product">
-                <img src="./assets/headphones2.jpg" alt="JBL Headphones">
-                <h2>JBL</h2>
-                <p>Powerful audio performance for music lovers.</p>
-                <p><strong>$199.00</strong></p>
-                <p class="availability">In Stock</p>
-                <p class="special-financing">Special financing available.</p>
-                <button>Add to Cart</button>
-                <button class="view-details">View Details</button>
-            </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Department</h4>
+                        <ul>
+                            <li><a href="#">Electronics</a></li>
+                            <li><a href="#">Clothings</a></li>
+                            <li><a href="#">Books</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Groceries</a></li>
+                        </ul>
+                    </div>
     
-            <div class="product">
-                <img src="./assets/apple.jpg" alt="Apple AirPods Max">
-                <h2>Apple</h2>
-                <p>A perfect balance of exhilarating high-fidelity audio.</p>
-                <p><strong>$549.00</strong> or <strong>$99.99/month</strong></p>
-                <p class="availability">Only 12 Items Left!</p>
-                <p class="special-financing">6 months special financing.</p>
-                <button>Add to Cart</button>
-                <button class="view-details">View Details</button>
-            </div>
+                    <div class="footer-column">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, Toronto, Canada</li>
+                            <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                            <li><i class="fas fa-envelope"></i> contact@bmazon.com</li>
+                        </ul>
+                    </div>
     
-            <div class="product">
-                <img src="./assets/sony.jpg" alt="Sony Headphones">
-                <h2>Sony</h2>
-                <p>Industry-leading noise cancellation and sound quality.</p>
-                <p><strong>$349.00</strong></p>
-                <p class="availability">In Stock</p>
-                <p class="special-financing">Special financing available.</p>
-                <button>Add to Cart</button>
-                <button class="view-details">View Details</button>
+                    <div class="footer-column">
+                        <p>2023 Your Company. All rights reserved.</p>
+                        <ul class="socials">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </section>
-    </div>
-
+        </footer>
 </body>
 </html>
