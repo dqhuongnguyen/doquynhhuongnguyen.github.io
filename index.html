@@ -18,8 +18,9 @@
         <div class="nav-bar">
             <div class="logo">
                 <img src="./assets/shopping-cart-icon.webp" width="40px">
-                Bmazon
+                <span>Bmazon</span>
             </div>
+
             <div class="nav-right">
                 <div class="search-bar">
                     <input type="text" placeholder="Search">
@@ -28,9 +29,20 @@
                     </button>
                 </div>
                 <div class="account-cart">
-                    <a href="login.html">Account</a>
-                    <a href="cart.html">Cart</a>
+                    <a href="./login.html"><img src="./assets/user.webp" width="20px">Account</a>
+                    <a href="./cart.html"><img src="./assets/cart-148964_1280.png" width="15px">Cart</a>
                 </div>
+
+                <!-- Hamburger Menu -->
+                <div class="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+            <!-- Mobile Dropdown Menu -->
+            <div class="mobile-menu">
+                <a href="./login.html"><img src="./assets/user.webp" width="20px">Account</a>
+                <a href="./cart.html"><img src="./assets/cart-148964_1280.png" width="15px">Cart</a>
             </div>
         </div>
     </header>
@@ -60,7 +72,7 @@
             </div>
             <div class="carousel-description">
                 <h1>Sale Up to 50% Off<br>On Selected Items</h1>
-                <button>Buy Now</button>
+                <a href="#"><button>Buy Now</button></a>
             </div>
         </div>
     </section>
@@ -110,7 +122,7 @@
                 <div class="product-description">
                     <h2>Reebok Men's Nano 2.0 Sneaker</h2>
                     <p>$59.00</p>
-                    <button>Add to Cart</button>
+                    <a href="./productdetail.html"><button>Add to Cart</button></a>
                 </div>
             </div>
             <div class="product" data-category="electronics">
@@ -121,36 +133,36 @@
                     <button>Add to Cart</button>
                 </div>
             </div>
-            <div class="product" data-category="electronics">
-                <img src="./assets/airpod_max.jpg" alt="AirPods Max">
+            <div class="product" data-category="Clothings">
+                <img src="./assets/shirt.webp" alt="Shirt">
                 <div class="product-description">
-                    <h2>AirPods Max</h2>
-                    <p>$559.00</p>
-                    <button>Add to Cart</button>
-                </div>
-            </div>
-            <div class="product" data-category="books">
-                <img src="./assets/book.webp" alt="Book" style="width: 110px;">
-                <div class="product-description">
-                    <h2>Think and Grow Rich</h2>
+                    <h2>Tennis Tee</h2>
                     <p>$29.00</p>
-                    <button>Add to Cart</button>
+                    <a href="./productdetail.html"><button>Add to Cart</button></a>
                 </div>
             </div>
             <div class="product" data-category="accessories">
-                <img src="./assets/shoes.webp" alt="Shoes">
+                <img src="./assets/hat.webp" alt="Hat" style="width: 110px;">
                 <div class="product-description">
-                    <h2>Reebok Men's Nano 2.0 Sneaker</h2>
-                    <p>$59.00</p>
-                    <button>Add to Cart</button>
+                    <h2>Baseball Cap</h2>
+                    <p>$24.00</p>
+                    <a href="./productdetail.html"><button>Add to Cart</button></a>
+                </div>
+            </div>
+            <div class="product" data-category="groceries">
+                <img src="./assets/tomato.jpg" alt="Tomato">
+                <div class="product-description">
+                    <h2>Tomatoes on the Vine, 2 lbs</h2>
+                    <p>$19.00</p>
+                    <a href="./productdetail.html"><button>Add to Cart</button></a>
                 </div>
             </div>
             <div class="product" data-category="electronics">
                 <img src="./assets/macbook.webp" alt="Macbook" style="width: 140px;">
                 <div class="product-description">
                     <h2>Macbook Pro 13 inch</h2>
-                    <p>$1499</p>
-                    <button>Add to Cart</button>
+                    <p>$14.99</p>
+                    <a href="./productdetail.html"><button>Add to Cart</button></a>
                 </div>
             </div>
         </div>
@@ -171,11 +183,11 @@
                 <div class="footer-column">
                     <h4>Department</h4>
                     <ul>
-                        <li><a href="#">Electronics</a></li>
-                        <li><a href="#">Clothings</a></li>
-                        <li><a href="#">Books</a></li>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Groceries</a></li>
+                        <li>Electronics</li>
+                        <li>Clothings</li>
+                        <li>Books</li>
+                        <li>Accessories</li>
+                        <li>Groceries</li>
                     </ul>
                 </div>
 

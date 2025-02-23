@@ -18,3 +18,9 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+$(document).ready(function() {
+    $(".hamburger-menu").click(function() {
+        $(".mobile-menu").toggle();
+    });
+});
