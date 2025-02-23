@@ -231,3 +231,21 @@
     color: #333;
     margin-right: 10px;
 }
+
+@media (max-width: 767px) {
+    .product-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .product-details {
+        padding-left: 0;
+    }
+    .color-options {
+        justify-content: center;
+    }
+    .account-cart {
+        justify-content: flex-start;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
