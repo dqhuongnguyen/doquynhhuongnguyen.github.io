@@ -5,197 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bmazon</title>
     <link rel="stylesheet" href="./css/wishlist.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: white;
-            padding: 15px 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            flex-wrap: wrap;
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .logo img {
-            width: 40px;
-            margin-right: 10px;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-            padding: 0;
-            flex-wrap: wrap;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: black;
-            transition: all 0.3s ease;
-        }
-        nav ul li a:hover {
-            color: blue;
-            text-decoration: underline;
-        }
-        .account-cart {
-            display: flex;
-            gap: 15px;
-        }
-        .account-cart span {
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        .account-cart span:hover {
-            color: blue;
-            text-decoration: underline;
-        }
-        .wishlist-container {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        .wishlist-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        .wishlist-header h1 {
-            margin: 0;
-        }
-        .wishlist-header span {
-            font-size: 16px;
-            color: #666;
-        }
-        .wishlist-table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .wishlist-table th, .wishlist-table td {
-            padding: 15px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        .wishlist-table th {
-            font-weight: bold;
-        }
-        .wishlist-table img {
-            width: 60px;
-            height: 60px;
-            object-fit: cover;
-            border-radius: 5px;
-        }
-        .wishlist-table .delete-icon {
-            cursor: pointer;
-            color: red;
-            font-size: 18px;
-        }
-        .wishlist-table .price {
-            font-weight: bold;
-            color: green;
-        }
-        .wishlist-table .old-price {
-            text-decoration: line-through;
-            color: #888;
-        }
-        .wishlist-table .stock-status {
-            color: green;
-        }
-        .wishlist-table .out-of-stock {
-            color: red;
-        }
-        .wishlist-table .quantity {
-            font-weight: bold;
-            color: #555;
-        }
-        .wishlist-table .add-to-cart {
-            background-color: #28a745;
-            color: white;
-            border: none;
-            padding: 8px 12px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .wishlist-table .add-to-cart:hover {
-            background-color: #218838;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="images/shopcart.png" alt="Shopcart Logo">
-            Shopcart
-        </div>
-        <nav>
-            <ul>
-                <li><a href="categories.html">Categories</a></li>
-                <li><a href="deals.html">Deals</a></li>
-                <li><a href="whatsnew.html">What's New</a></li>
-                <li><a href="delivery.html">Delivery</a></li>
-            </ul>
-        </nav>
-        <div class="account-cart">
-            <span>Account</span>
-            <span>Cart</span>
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="./assets/shopping-cart-icon.webp" width="40px">
+                Bmazon
+            </div>
+            <div class="nav-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <button>
+                        <img src="./assets/magnifying-glass.webp" width="20px">
+                    </button>
+                </div>
+                <div class="account-cart">
+                    <a href="login.html">Account</a>
+                    <a href="cart.html">Cart</a>
+                </div>
+            </div>
         </div>
     </header>
+
     <main>
         <section class="wishlist-container">
             <div class="wishlist-header">
                 <h1>My Wishlist</h1>
                 <span>3 items selected</span>
             </div>
-            <table class="wishlist-table">
-                <tr>
-                    <th></th>
-                    <th>Product Name</th>
-                    <th>Quantity</th>
-                    <th>Unit Price</th>
-                    <th>Stock Status</th>
-                    <th></th>
-                </tr>
-                <tr>
-                    <td><span class="delete-icon">🗑️</span></td>
-                    <td><img src="assets\download.jpeg" alt="Product"> Airpods Maxs</td>
-                    <td class="quantity">1 item</td>
-                    <td><span class="old-price">$20.00</span> <span class="price">$18.00</span></td>
-                    <td class="stock-status">In Stock</td>
-                    <td><button class="add-to-cart">Add to cart</button></td>
-                </tr>
-                <tr>
-                    <td><span class="delete-icon">🗑️</span></td>
-                    <td><img src="assets\wireless.jpg" alt="Product"> Wireless Earbuds</td>
-                    <td class="quantity">2 items</td>
-                    <td class="price">$16.00</td>
-                    <td class="stock-status">In Stock</td>
-                    <td><button class="add-to-cart">Add to cart</button></td>
-                </tr>
-                <tr>
-                    <td><span class="delete-icon">🗑️</span></td>
-                    <td><img src="assets\bluetooth.jpg" alt="Product"> Bluetooth Speakers</td>
-                    <td class="quantity">2 items</td>
-                    <td><span class="old-price">$20.00</span> <span class="price">$18.00</span></td>
-                    <td class="stock-status">In Stock</td>
-                    <td><button class="add-to-cart">Add to cart</button></td>
-                </tr>
-            </table>
+            <div class="wishlist-items">
+                <div class="wishlist-item">
+                    <img src="assets/download.jpeg" alt="Airpods Max">
+                    <div class="wishlist-details">
+                        <h3>Airpods Max</h3>
+                        <p class="price"><span class="old-price">$100.00</span> <span class="new-price">$50.00</span></p>
+                        <p class="stock-status">In Stock</p>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="add-to-cart">Add to cart</button>
+                        <button class="remove-item">Remove</button>
+                    </div>
+                </div>
+                <div class="wishlist-item">
+                    <img src="assets/wireless.jpg" alt="Wireless Earbuds">
+                    <div class="wishlist-details">
+                        <h3>Wireless Earbuds</h3>
+                        <p class="price">$16.00</p>
+                        <p class="stock-status">In Stock</p>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="add-to-cart">Add to cart</button>
+                        <button class="remove-item">Remove</button>
+                    </div>
+                </div>
+                <div class="wishlist-item">
+                    <img src="assets/bluetooth.jpg" alt="Bluetooth Speakers">
+                    <div class="wishlist-details">
+                        <h3>Bluetooth Speakers</h3>
+                        <p class="price"><span class="old-price">$20.00</span> <span class="new-price">$18.00</span></p>
+                        <p class="stock-status">In Stock</p>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="add-to-cart">Add to cart</button>
+                        <button class="remove-item">Remove</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+
+    <div class="footer-line"></div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <h2>Bmazon</h2>
+                </div>
+                <p>We are committed to providing the best products and services to our customers.</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Department</h4>
+                    <ul>
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Clothings</a></li>
+                        <li><a href="#">Books</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Groceries</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>123 Main Street, Toronto, Canada</li>
+                        <li>+123 456 7890</li>
+                        <li>contact@bmazon.com</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <p>2023 Your Company. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
