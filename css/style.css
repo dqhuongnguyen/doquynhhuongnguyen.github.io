@@ -241,6 +241,25 @@ body {
     text-align: center;
 }
 
+/*STAR RATING STYLES */
+
+.star-rating {
+    font-size: 20px;
+    cursor: pointer;
+    color: #ddd; /* Default star color */
+}
+
+.star {
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.star:hover,
+.star.active {
+    color: gold; /* Highlighted stars */
+}
+
+
 .product h2 {
     font-size: 18px;
     margin: 10px 0;

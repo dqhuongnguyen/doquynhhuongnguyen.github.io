@@ -24,3 +24,24 @@ $(document).ready(function() {
         $(".mobile-menu").toggle();
     });
 });
+
+//STAR FEATURE FUNCTIONALITY
+document.addEventListener("DOMContentLoaded", () => {
+    const stars = document.querySelectorAll(".star");
+
+    stars.forEach(star => {
+        star.addEventListener("click", function () {
+            let value = this.getAttribute("data-value");
+            let parent = this.parentNode;
+            let allStars = parent.querySelectorAll(".star");
+
+            // Reset all stars
+            allStars.forEach(s => s.classList.remove("active"));
+
+            // Highlight selected stars
+            for (let i = 0; i < value; i++) {
+                allStars[i].classList.add("active");
+            }
+        });
+    });
+});
