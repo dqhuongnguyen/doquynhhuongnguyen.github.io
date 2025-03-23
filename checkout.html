@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bmazon</title>
+  <link rel="stylesheet" href="./css/checkout.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="checkout-form">
+      <h2>Checkout</h2>
+      <h4>Shipping Information</h4>
+      <form>
+        <label>Full name *</label>
+        <input type="text" placeholder="Enter full name" required />
+
+        <label>Email address *</label>
+        <input type="email" placeholder="Enter email address" required />
+
+        <label>Phone number *</label>
+        <div class="phone-input">
+          <input type="tel" placeholder="Enter phone number" required />
+        </div>
+
+        <label>Address *</label>
+        <div class="city-state-zip">
+          <input type="text" placeholder="City" />
+          <input type="text" placeholder="State" />
+          <input type="text" placeholder="ZIP code" />
+        </div>
+
+        <div class="terms">
+          <input type="checkbox" id="checkbox-tick" required />
+          <label for="checkbox-tick">I have read and agree to the Terms and Conditions.</label>
+        </div>
+      </form>
+    </div>
+
+    <div class="order-summary">
+      <h3>Review your cart</h3>
+
+      <div class="cart-item">
+        <img src="./assets/airpod_max.jpg" alt="Sofa" />
+        <div>
+          <p>AirPods Max</p>
+          <span>$559.00</span>
+        </div>
+      </div>
+
+      <div class="cart-item">
+        <img src="./assets/macbook.webp" alt="Desk" />
+        <div>
+          <p>Macbook Pro 13 inch</p>
+          <span>$1499</span>
+        </div>
+      </div>
+
+      <div class="totals">
+        <div><span>Subtotal</span><span>$2058.00</span></div>
+        <div><span>Shipping</span><span>$20.00</span></div>
+        <div class="total"><strong>Total</strong><strong>$2078.00</strong></div>
+      </div>
+
+      <button class="pay-button">Make payment</button>
+      <p class="form-error"></p>
+    </div>
+  </div>
+
+  <script src="./js/checkout.js"></script>
+</body>
+</html>
