@@ -22,7 +22,7 @@
     <header>
         <div class="nav-bar">
             <div class="logo">
-                <a href="./index.html">
+                <a href="./index.html" style="display: flex; align-items: center;">
                     <img src="./assets/shopping-cart-icon.webp" width="40px">
                     <span>Bmazon</span>
                 </a>
@@ -60,7 +60,7 @@
     </header>
 
     <section class="banner">
-        <div class="banner-content">
+        <div class="banner-content container">
             <div class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -113,132 +113,68 @@
     <section class="popular-products">
         <h2 class="section-title">Popular Products</h2>
         <div class="product-items">
-            <div class="product" data-category="electronics">
+            <div class="product" data-category="electronics" onclick="viewProductDetail(event, 'airpods-max')">
                 <img src="./assets/airpod_max.jpg" alt="AirPods Max">
                 <div class="product-description">
                     <h2>AirPods Max</h2>
                     <p>$559.00</p>
-                    <a href="./productdetail.html"><button>Add to Cart</button></a>
-                    <!--STAR RATING FEATURE-->
-                    <div class="star-rating">
-                        <span class="star" data-value="1">&#9733;</span>
-                        <span class="star" data-value="2">&#9733;</span>
-                        <span class="star" data-value="3">&#9733;</span>
-                        <span class="star" data-value="4">&#9733;</span>
-                        <span class="star" data-value="5">&#9733;</span>
-                    </div>
+                    <button onclick="addToCart('AirPods Max', 559.00, './assets/airpod_max.jpg')" class="add-to-cart-btn">Add to Cart</button>
                 </div>
             </div>
-            <div class="product" data-category="books">
-                <img src="./assets/book.webp" alt="Book" style="width: 110px;">
+            <div class="product" data-category="books" onclick="viewProductDetail(event, 'think-grow-rich')">
+                <img src="./assets/book.webp" alt="Book">
                 <div class="product-description">
                     <h2>Think and Grow Rich</h2>
                     <p>$29.00</p>
-                    <button>Add to Cart</button>
-                    <!--STAR RATING FEATURE-->
-                    <div class="star-rating">
-                        <span class="star" data-value="1">&#9733;</span>
-                        <span class="star" data-value="2">&#9733;</span>
-                        <span class="star" data-value="3">&#9733;</span>
-                        <span class="star" data-value="4">&#9733;</span>
-                        <span class="star" data-value="5">&#9733;</span>
-                    </div>
+                    <button onclick="addToCart('Think and Grow Rich', 29.00, './assets/book.webp')" class="add-to-cart-btn">Add to Cart</button>
                 </div>
             </div>
-            <div class="product" data-category="accessories">
+            <div class="product" data-category="accessories" onclick="viewProductDetail(event, 'reebok-sneaker')">
                 <img src="./assets/shoes.webp" alt="Shoes">
                 <div class="product-description">
                     <h2>Reebok Men's Nano 2.0 Sneaker</h2>
                     <p>$59.00</p>
-                    <a href="./productdetail.html"><button>Add to Cart</button></a>
-                    <!--STAR RATING FEATURE-->
-                    <div class="star-rating">
-                        <span class="star" data-value="1">&#9733;</span>
-                        <span class="star" data-value="2">&#9733;</span>
-                        <span class="star" data-value="3">&#9733;</span>
-                        <span class="star" data-value="4">&#9733;</span>
-                        <span class="star" data-value="5">&#9733;</span>
-                    </div>
+                    <button onclick="addToCart('Reebok Men\'s Nano 2.0 Sneaker', 59.00, './assets/shoes.webp')" class="add-to-cart-btn">Add to Cart</button>
                 </div>
             </div>
-            <div class="product" data-category="electronics">
-                <img src="./assets/macbook.webp" alt="Macbook" style="width: 140px;">
+            <div class="product" data-category="electronics" onclick="viewProductDetail(event, 'macbook-pro')">
+                <img src="./assets/macbook.webp" alt="Macbook">
                 <div class="product-description">
                     <h2>Macbook Pro 13 inch</h2>
                     <p>$1499</p>
-                    <button>Add to Cart</button>
-                    <!--STAR RATING FEATURE-->
-                    <div class="star-rating">
-                        <span class="star" data-value="1">&#9733;</span>
-                        <span class="star" data-value="2">&#9733;</span>
-                        <span class="star" data-value="3">&#9733;</span>
-                        <span class="star" data-value="4">&#9733;</span>
-                        <span class="star" data-value="5">&#9733;</span>
-                    </div>
+                    <button onclick="addToCart('Macbook Pro 13 inch', 1499.00, './assets/macbook.webp')" class="add-to-cart-btn">Add to Cart</button>
                 </div>
             </div>
-            <div class="product" data-category="Clothings">
+            <div class="product" data-category="clothings" onclick="viewProductDetail(event, 'tennis-tee')">
                 <img src="./assets/shirt.webp" alt="Shirt">
                 <div class="product-description">
                     <h2>Tennis Tee</h2>
                     <p>$29.00</p>
-                    <a href="./productdetail.html"><button>Add to Cart</button></a>
-                    <!--STAR RATING FEATURE-->
-                    <div class="star-rating">
-                        <span class="star" data-value="1">&#9733;</span>
-                        <span class="star" data-value="2">&#9733;</span>
-                        <span class="star" data-value="3">&#9733;</span>
-                        <span class="star" data-value="4">&#9733;</span>
-                        <span class="star" data-value="5">&#9733;</span>
-                    </div>
+                    <button onclick="addToCart('Tennis Tee', 29.00, './assets/shirt.webp')" class="add-to-cart-btn">Add to Cart</button>
                 </div>
             </div>
-            <div class="product" data-category="accessories">
-                <img src="./assets/hat.webp" alt="Hat" style="width: 110px;">
+            <div class="product" data-category="accessories" onclick="viewProductDetail(event, 'baseball-cap')">
+                <img src="./assets/hat.webp" alt="Hat">
                 <div class="product-description">
                     <h2>Baseball Cap</h2>
                     <p>$24.00</p>
-                    <a href="./productdetail.html"><button>Add to Cart</button></a>
-                    <!--STAR RATING FEATURE-->
-                    <div class="star-rating">
-                        <span class="star" data-value="1">&#9733;</span>
-                        <span class="star" data-value="2">&#9733;</span>
-                        <span class="star" data-value="3">&#9733;</span>
-                        <span class="star" data-value="4">&#9733;</span>
-                        <span class="star" data-value="5">&#9733;</span>
-                    </div>
+                    <button onclick="addToCart('Baseball Cap', 24.00, './assets/hat.webp')" class="add-to-cart-btn">Add to Cart</button>
                 </div>
             </div>
-            <div class="product" data-category="groceries">
+            <div class="product" data-category="groceries" onclick="viewProductDetail(event, 'tomatoes')">
                 <img src="./assets/tomato.jpg" alt="Tomato">
                 <div class="product-description">
                     <h2>Tomatoes on the Vine, 2 lbs</h2>
                     <p>$19.00</p>
-                    <a href="./productdetail.html"><button>Add to Cart</button></a>
-                    <!--STAR RATING FEATURE-->
-                    <div class="star-rating">
-                        <span class="star" data-value="1">&#9733;</span>
-                        <span class="star" data-value="2">&#9733;</span>
-                        <span class="star" data-value="3">&#9733;</span>
-                        <span class="star" data-value="4">&#9733;</span>
-                        <span class="star" data-value="5">&#9733;</span>
-                    </div>
+                    <button onclick="addToCart('Tomatoes on the Vine, 2 lbs', 19.00, './assets/tomato.jpg')" class="add-to-cart-btn">Add to Cart</button>
                 </div>
             </div>
-            <div class="product" data-category="electronics">
-                <img src="./assets/macbook.webp" alt="Macbook" style="width: 140px;">
+            <div class="product" data-category="electronics" onclick="viewProductDetail(event, 'macbook-pro-alt')">
+                <img src="./assets/macbook.webp" alt="Macbook">
                 <div class="product-description">
                     <h2>Macbook Pro 13 inch</h2>
                     <p>$14.99</p>
-                    <a href="./productdetail.html"><button>Add to Cart</button></a>
-                    <!--STAR RATING FEATURE-->
-                    <div class="star-rating">
-                        <span class="star" data-value="1">&#9733;</span>
-                        <span class="star" data-value="2">&#9733;</span>
-                        <span class="star" data-value="3">&#9733;</span>
-                        <span class="star" data-value="4">&#9733;</span>
-                        <span class="star" data-value="5">&#9733;</span>
-                    </div>
+                    <button onclick="addToCart('Macbook Pro 13 inch', 14.99, './assets/macbook.webp')" class="add-to-cart-btn">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -287,7 +223,10 @@
             </div>
         </div>
     </footer>
+    <div id="toast" class="toast-notification"></div>
 
+    <script src="./js/cart.js"></script>
+    <script src="./js/productdetail.js"></script>
+    
 </body>
-
 </html>
