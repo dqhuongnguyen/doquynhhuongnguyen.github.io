@@ -70,7 +70,7 @@ h1 {
 .checkout {
     font-weight: bold;
     color: white;
-    background-color: green;
+    background-color: #004d40;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -277,6 +277,10 @@ h1 {
 
 
 @media (max-width: 767px) {
+    .logo {
+        font-size: 18px;
+    }
+
     .search-bar input {
         width: 150px;
     }

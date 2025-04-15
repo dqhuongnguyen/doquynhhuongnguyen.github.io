@@ -1,3 +1,6 @@
+console.log("index.js is loaded!");
+
+// FILTER PRODUCTS FUNCTIONALITY
 document.addEventListener("DOMContentLoaded", function() {
     const categoryCard = document.querySelectorAll(".category-card");
     const products = document.querySelectorAll(".product");
@@ -17,9 +20,34 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
     });
+
+// SEARCH FUNCTIONALITY
+    const searchInput = document.querySelector(".search-bar input");
+    const searchBtn = document.querySelector(".search-bar button");
+
+    function performSearch() {
+        const query = searchInput.value.trim().toLowerCase();
+
+        products.forEach(product => {
+        const name = product.querySelector("h2").innerText.toLowerCase();
+
+        if (name.includes(query)) {
+            product.style.display = "inline-block";
+        } else {
+            product.style.display = "none";
+        }
+        });
+    }
+
+    searchInput.addEventListener("keyup", function (e) {
+        if (e.key === "Enter") performSearch();
+    });
+    
+    searchBtn.addEventListener("click", performSearch);
 });
 
 $(document).ready(function() {
+    console.log('hihi');
     $(".hamburger-menu").click(function() {
         $(".mobile-menu").toggle();
     });

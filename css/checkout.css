@@ -115,6 +115,44 @@ form select {
   width: 100px;
 }
 
+.confirmation {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f8fff4;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 100px auto;
+}
+
+.confirmation h2 {
+  font-size: 28px;
+  color: #004d40;
+  margin-bottom: 15px;
+}
+
+.confirmation p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.continue-btn {
+  display: inline-block;
+  background-color: #004d40;
+  color: white;
+  padding: 12px 24px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.continue-btn:hover {
+  background-color: #004d40;
+}
+
+
 @media (max-width: 767px) {
   .container {
     flex-direction: column;
