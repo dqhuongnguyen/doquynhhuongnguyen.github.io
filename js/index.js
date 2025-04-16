@@ -1,5 +1,3 @@
-console.log("index.js is loaded!");
-
 // FILTER PRODUCTS FUNCTIONALITY
 document.addEventListener("DOMContentLoaded", function() {
     const categoryCard = document.querySelectorAll(".category-card");
