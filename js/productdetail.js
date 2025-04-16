@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
     const products = {
         "airpods-max": {
@@ -57,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const product = products[productId];
 
     if (product) {
-        // Populate product detail content dynamically
+        // Populate product detail content
         const imgEl = document.querySelector(".product-image img");
         const titleEl = document.querySelector(".product-details h1");
         const descEl = document.querySelector(".product-details p");
@@ -74,10 +73,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (cartBtn) {
             cartBtn.addEventListener("click", (e) => {
                 e.preventDefault();
-                
                 const qtyInput = document.getElementById("quantity");
                 const quantity = parseInt(qtyInput.value) || 1;
-            
                 addToCart(product.name, product.price, product.image, quantity);
             });
         }
@@ -94,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cards.forEach((card) => {
             card.addEventListener("click", (e) => {
                 // Don’t trigger if clicking on a button inside the card
-                if (e.target.closest("button")) return;
+                if (e.target.closest("button") || e.target.classList.contains("star")) return;
 
                 const title = card.querySelector("h2");
                 if (!title) return;
@@ -109,4 +106,22 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     }
+
+    // STAR RATING FEATURE
+    const stars = document.querySelectorAll(".star");
+
+    stars.forEach(star => {
+        star.addEventListener("click", function (e) {
+            e.stopPropagation(); // prevent triggering product card click
+            let value = this.getAttribute("data-value");
+            let parent = this.parentNode;
+            let allStars = parent.querySelectorAll(".star");
+
+            allStars.forEach(s => s.classList.remove("active"));
+
+            for (let i = 0; i < value; i++) {
+                allStars[i].classList.add("active");
+            }
+        });
+    });
 });
