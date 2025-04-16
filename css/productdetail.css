@@ -193,6 +193,28 @@
     margin-right: 10px;
 }
 
+/*STAR RATING STYLES */
+
+.star-rating {
+    margin-top: 20px;
+}
+
+.star-rating {
+    font-size: 20px;
+    cursor: pointer;
+    color: #ddd; /* Default star color */
+}
+
+.star {
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.star:hover,
+.star.active {
+    color: gold; /* Highlighted stars */
+}
+
 @media (max-width: 767px) {
 
     .product-container {
