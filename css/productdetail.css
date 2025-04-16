@@ -268,4 +268,8 @@
     .socials {
         justify-content: center;
     }
+
+    .quantity-selector {
+        justify-content: center;
+    }
 }
