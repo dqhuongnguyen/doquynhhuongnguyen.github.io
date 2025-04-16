@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
       <div>
         <h3>${item.name}</h3>
         <p>$${item.price.toFixed(2)}</p>
-        <button class="add-to-cart" onclick="addToCart('${item.name}', ${item.price}, '${item.image}')">Add to Cart</button>
         <button class="remove" onclick="removeFromWishlist('${item.name}')">Remove</button>
       </div>
     `;
