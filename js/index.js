@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 $(document).ready(function() {
-    console.log('hihi');
     $(".hamburger-menu").click(function() {
         $(".mobile-menu").toggle();
     });

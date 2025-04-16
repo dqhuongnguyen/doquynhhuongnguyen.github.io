@@ -14,8 +14,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/auth.js"></script> 
-
-
 </head>
 
 <body>
@@ -38,9 +36,10 @@
                 <div class="account-cart">
                     <a href="./login.html" id="account-link"><img src="./assets/user.webp" width="20px"><span
                             id="username-display">Account</span></a>
-
+                    <a href="./wishlist.html"><i class="fas fa-heart"></i></a>
                     <a href="./cart.html"><img src="./assets/cart-148964_1280.png" width="15px">Cart</a>
                 </div>
+
 
                 <!-- Hamburger Menu -->
                 <div class="hamburger-menu">
@@ -53,7 +52,7 @@
                 <a href="./login.html" id="account-link-mobile"><img src="./assets/user.webp" width="20px"><span
                         id="username-display-mobile">Account</span></a>
 
-
+                <a href="./wishlist.html"><i class="fas fa-heart"></i></a>
                 <a href="./cart.html"><img src="./assets/cart-148964_1280.png" width="15px">Cart</a>
             </div>
         </div>
@@ -118,6 +117,9 @@
                 <div class="product-description">
                     <h2>AirPods Max</h2>
                     <p>$559.00</p>
+                    <button class="wishlist-btn" onclick="addToWishlist('AirPods Max', 549.00, './assets/airpod_max.jpg')">
+                        <i class="fas fa-heart"></i>
+                    </button>
                     <button onclick="addToCart('AirPods Max', 559.00, './assets/airpod_max.jpg')" class="add-to-cart-btn">Add to Cart</button>
                 </div>
             </div>
@@ -126,23 +128,32 @@
                 <div class="product-description">
                     <h2>Think and Grow Rich</h2>
                     <p>$29.00</p>
+                    <button class="wishlist-btn" onclick="addToWishlist('Think and Grow Rich', 29.00, './assets/book.webp')">
+                        <i class="fas fa-heart"></i>
+                    </button>
                     <button onclick="addToCart('Think and Grow Rich', 29.00, './assets/book.webp')" class="add-to-cart-btn">Add to Cart</button>
                 </div>
             </div>
             <div class="product" data-category="accessories" onclick="viewProductDetail(event, 'reebok-sneaker')">
                 <img src="./assets/shoes.webp" alt="Shoes">
                 <div class="product-description">
-                    <h2>Reebok Men's Nano 2.0 Sneaker</h2>
+                    <h2>Reebok Men Nano 2.0 Sneaker</h2>
                     <p>$59.00</p>
+                    <button class="wishlist-btn" onclick="addToWishlist('Reebok Men Nano 2.0 Sneaker', 59.00, './assets/shoes.webp')">
+                        <i class="fas fa-heart"></i>
+                    </button>
                     <button onclick="addToCart('Reebok Men\'s Nano 2.0 Sneaker', 59.00, './assets/shoes.webp')" class="add-to-cart-btn">Add to Cart</button>
                 </div>
             </div>
             <div class="product" data-category="electronics" onclick="viewProductDetail(event, 'macbook-pro')">
                 <img src="./assets/macbook.webp" alt="Macbook">
                 <div class="product-description">
-                    <h2>Macbook Pro 13 inch</h2>
+                    <h2>Macbook Pro 13 inch M1</h2>
                     <p>$1499</p>
-                    <button onclick="addToCart('Macbook Pro 13 inch', 1499.00, './assets/macbook.webp')" class="add-to-cart-btn">Add to Cart</button>
+                    <button class="wishlist-btn" onclick="addToWishlist('Macbook Pro 13 inch M1', 1499.00, './assets/macbook.webp')">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <button onclick="addToCart('Macbook Pro 13 inch M1', 1499.00, './assets/macbook.webp')" class="add-to-cart-btn">Add to Cart</button>
                 </div>
             </div>
             <div class="product" data-category="clothings" onclick="viewProductDetail(event, 'tennis-tee')">
@@ -150,6 +161,9 @@
                 <div class="product-description">
                     <h2>Tennis Tee</h2>
                     <p>$29.00</p>
+                    <button class="wishlist-btn" onclick="addToWishlist('Tennis Tee', 29.00, './assets/shirt.jpg')">
+                        <i class="fas fa-heart"></i>
+                    </button>
                     <button onclick="addToCart('Tennis Tee', 29.00, './assets/shirt.webp')" class="add-to-cart-btn">Add to Cart</button>
                 </div>
             </div>
@@ -158,6 +172,9 @@
                 <div class="product-description">
                     <h2>Baseball Cap</h2>
                     <p>$24.00</p>
+                    <button class="wishlist-btn" onclick="addToWishlist('Baseball Cap', 24.00, './assets/hat.webp')">
+                        <i class="fas fa-heart"></i>
+                    </button>
                     <button onclick="addToCart('Baseball Cap', 24.00, './assets/hat.webp')" class="add-to-cart-btn">Add to Cart</button>
                 </div>
             </div>
@@ -166,15 +183,21 @@
                 <div class="product-description">
                     <h2>Tomatoes on the Vine, 2 lbs</h2>
                     <p>$19.00</p>
+                    <button class="wishlist-btn" onclick="addToWishlist('Tomatoes on the Vine, 2 lbs', 19.00, './assets/tomato.jpg')">
+                        <i class="fas fa-heart"></i>
+                    </button>
                     <button onclick="addToCart('Tomatoes on the Vine, 2 lbs', 19.00, './assets/tomato.jpg')" class="add-to-cart-btn">Add to Cart</button>
                 </div>
             </div>
             <div class="product" data-category="electronics" onclick="viewProductDetail(event, 'macbook-pro-alt')">
                 <img src="./assets/macbook.webp" alt="Macbook">
                 <div class="product-description">
-                    <h2>Macbook Pro 13 inch</h2>
-                    <p>$14.99</p>
-                    <button onclick="addToCart('Macbook Pro 13 inch', 14.99, './assets/macbook.webp')" class="add-to-cart-btn">Add to Cart</button>
+                    <h2>Macbook Pro 13 inch M2</h2>
+                    <p>$1599</p>
+                    <button class="wishlist-btn" onclick="addToWishlist('Macbook Pro 13 inch M2', 1599, './assets/macbook-pro.jpg')">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <button onclick="addToCart('Macbook Pro 13 inch M2', 1599, './assets/macbook.webp')" class="add-to-cart-btn">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -227,6 +250,6 @@
 
     <script src="./js/cart.js"></script>
     <script src="./js/productdetail.js"></script>
-    
+    <script src="./js/wishlist.js"></script>
 </body>
 </html>

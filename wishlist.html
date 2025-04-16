@@ -4,74 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bmazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/wishlist.css">
 </head>
 <body>
-    <header>
-        <div class="nav-bar">
-            <div class="logo">
-                <img src="./assets/shopping-cart-icon.webp" width="40px">
-                Bmazon
-            </div>
-            <div class="nav-right">
-                <div class="search-bar">
-                    <input type="text" placeholder="Search">
-                    <button>
-                        <img src="./assets/magnifying-glass.webp" width="20px">
-                    </button>
-                </div>
-                <div class="account-cart">
-                    <a href="login.html">Account</a>
-                    <a href="cart.html">Cart</a>
-                </div>
-            </div>
-        </div>
-    </header>
-
     <main>
         <section class="wishlist-container">
             <div class="wishlist-header">
                 <h1>My Wishlist</h1>
-                <span>3 items selected</span>
             </div>
-            <div class="wishlist-items">
-                <div class="wishlist-item">
-                    <img src="assets/download.jpeg" alt="Airpods Max">
-                    <div class="wishlist-details">
-                        <h3>Airpods Max</h3>
-                        <p class="price"><span class="old-price">$100.00</span> <span class="new-price">$50.00</span></p>
-                        <p class="stock-status">In Stock</p>
-                    </div>
-                    <div class="action-buttons">
-                        <button class="add-to-cart">Add to cart</button>
-                        <button class="remove-item">Remove</button>
-                    </div>
-                </div>
-                <div class="wishlist-item">
-                    <img src="assets/wireless.jpg" alt="Wireless Earbuds">
-                    <div class="wishlist-details">
-                        <h3>Wireless Earbuds</h3>
-                        <p class="price">$16.00</p>
-                        <p class="stock-status">In Stock</p>
-                    </div>
-                    <div class="action-buttons">
-                        <button class="add-to-cart">Add to cart</button>
-                        <button class="remove-item">Remove</button>
-                    </div>
-                </div>
-                <div class="wishlist-item">
-                    <img src="assets/bluetooth.jpg" alt="Bluetooth Speakers">
-                    <div class="wishlist-details">
-                        <h3>Bluetooth Speakers</h3>
-                        <p class="price"><span class="old-price">$20.00</span> <span class="new-price">$18.00</span></p>
-                        <p class="stock-status">In Stock</p>
-                    </div>
-                    <div class="action-buttons">
-                        <button class="add-to-cart">Add to cart</button>
-                        <button class="remove-item">Remove</button>
-                    </div>
-                </div>
-            </div>
+
         </section>
     </main>
 
@@ -112,5 +56,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/wishlist.js"></script>
 </body>
 </html>

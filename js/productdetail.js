@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
             description: "A perfect balance of exhilarating high-fidelity audio and the effortless magic of AirPods.",
         },
         "macbook-pro": {
-            name: "Macbook Pro 13 inch",
+            name: "Macbook Pro 13 inch M1",
             price: 1499.0,
             image: "./assets/macbook.webp",
             description: "Powerful performance in a portable design.",
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
             description: "Classic personal development book for achieving success.",
         },
         "reebok-sneaker": {
-            name: "Reebok Men's Nano 2.0 Sneaker",
+            name: "Reebok Men Nano 2.0 Sneaker",
             price: 59.0,
             image: "./assets/shoes.webp",
             description: "Durable and versatile sneakers for every training session.",
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
             description: "Fresh and juicy vine-ripened tomatoes for your daily meals.",
         },
         "macbook-pro-alt": {
-            name: "Macbook Pro 13 inch",
+            name: "Macbook Pro 13 inch M2",
             price: 1499.0,
             image: "./assets/macbook.webp",
             description: "Same great performance, limited-time discount edition.",
