@@ -71,10 +71,15 @@ h1 {
     font-weight: bold;
     color: white;
     background-color: #004d40;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.cart-buttons a:hover {
+    text-decoration: none;
+    color: white;
 }
 
 /* Footer */
@@ -173,11 +178,6 @@ h1 {
 
 
 @media (max-width: 767px) {
-    .carousel-description h1, a {
-        display: none;
-        z-index: 10;
-    }
-
     .product-items {
         padding: 10px;
     }
